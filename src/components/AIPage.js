@@ -33,7 +33,7 @@ const AIPage = () => {
       <div className="button-container">
         <button className="continue-button">Continue</button>
         <button className="new-button" onClick={handleNewButtonClicked}>
-          New Button
+          Upload Files 
         </button>
       </div>
     </div>
