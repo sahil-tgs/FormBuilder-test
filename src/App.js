@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './HomePage';
+import TemplatesPage from './components/TemplatesPage';
+import AIPage from './components/AIPage';
+import UploadDocumentPage from './components/UploadDocumentPage'; // Correct the import statement
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/template-form" element={<TemplatesPage />} />
+          <Route path="/ai-form-builder" element={<AIPage />} />
+          <Route path="/upload-document" element={<UploadDocumentPage />} /> {/* Correct the route */}
+        </Routes>
+      </Router>
     </div>
   );
 }

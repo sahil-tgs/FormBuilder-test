@@ -1,0 +1,70 @@
+
+/* components/Cards.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .card-link {
+    text-decoration: none;
+    color: black; /* Change this to your desired text color */
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 800px;
+  }
+  
+  .card {
+    width: 250px; /* Reduce the width */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .card-text {
+    padding: 10px;
+    text-align: left; /* Align the text to the left */
+  }
+  
+  h2,
+  p {
+    padding-top: 20px;
+    margin: 0; /* Reset margin */
+  }
+  
+  h2 {
+    font-size: 18px; /* Set the font size for the title */
+  }
